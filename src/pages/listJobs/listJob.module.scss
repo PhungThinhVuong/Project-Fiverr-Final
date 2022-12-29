@@ -1,0 +1,35 @@
+.listJobs {
+  :global {
+    .table {
+      display: none;
+    }
+    .react-bootstrap-table-pagination {
+      align-items: baseline;
+      .col-lg-6 {
+        max-width: 36%;
+      }
+      .react-bootstrap-table-pagination-list {
+        .pagination {
+          justify-content: center;
+          .page-item {
+            .page-link {
+              margin-left: 4px;
+              margin-right: 4px;
+              color: black;
+              border-radius: 0.25rem;
+              &:focus {
+                box-shadow: none;
+              }
+            }
+          }
+          .page-item.active {
+            .page-link {
+              background-color: #ccc;
+              border-color: #ccc;
+            }
+          }
+        }
+      }
+    }
+  }
+}
